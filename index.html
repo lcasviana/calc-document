@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Documento de Cálculos</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Capriola&display=swap">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <article id="init">
+    <button id="initialize">Iniciar!</button>
+  </article>
+
+  <article id="main" class="dn">
+    <section>
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div>
+        <label for="x">x:</label>
+        <input type="number" name="x" id="x" onkeyup="this.value = this.value.replace(/[^0-9]/,'')">
+      </div>
+      <div>
+        <label for="y">y:</label>
+        <input type="number" name="y" id="y" onkeyup="this.value = this.value.replace(/[^0-9]/,'')">
+      </div>
+      <button id="calculate">Calcular!</button>
+    </section>
+
+    <footer>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>X</th>
+            <th>Y</th>
+            <th>Média</th>
+            <th>Múltiplos de 3</th>
+            <th>Múltiplos de 5</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+      </table>
+    </footer>
+  </article>
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
