@@ -64,6 +64,12 @@ const calculateFunction = () => {
   tr.appendChild(td3);
   tr.appendChild(td5);
 
+  alert(`Olá, ${nameInput.value}!
+Você inseriu os números x: ${xNumber} e y: ${yNumber}.
+A média deles é ${mediaValue}.
+Os múltiplos serão apresentados na tabela a seguir.
+Obrigado! 😁👍`);
+
   tableBody.appendChild(tr);
 
   nameInput.value = '';
